@@ -1,0 +1,16 @@
+# Site settings
+title: Working Title
+email: mringer@gmail.com
+description: >
+  Misadventures in creative code writing. There will also be some unicorns thown in for good measure. 
+baseurl: ""
+url: "http://matthewringer.github.io/"
+twitter_username: ""
+github_username:  matthewringer
+
+# Build settings
+markdown: kramdown
+
+include: ['_pages']
+
+
