@@ -1,0 +1,3 @@
+{% for account in site.data.socialmedia.accounts %}
+    <li>{% include media-link.html link=account.link username=account.username title=account.name  icon=account.icon size="fa-lg" %}</li>
+{% endfor %}

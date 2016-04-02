@@ -1,0 +1,6 @@
+
+
+
+{% for account in site.data.socialmedia.accounts %}
+    <div class="col-md-4 all-pad-15">{% include media-link.html link=account.link  icon=account.icon title=account.name size="fa-3x" %}</div>
+{% endfor %}

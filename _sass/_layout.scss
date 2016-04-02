@@ -1,244 +1,223 @@
-/**
- * Site header
+/*
+ * Globals
  */
-.site-header {
-    background-color: grey;
+
+body {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: #555;
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  margin-top: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  color: #333;
+}
+
+
+/*
+ * Override Bootstrap's default container.
+ */
+
+@media (min-width: 1200px) {
+  .container {
+    width: $content-width;
+  }
+}
+
+/* *********************************
+   Some Style Overrides on Bootstrap
+  ********************************** */
+
+.all-pad-15 {
+    padding: 15px;
+}
+
+.btn-info {
+    background-color: rgb(62,195,246);
+    border-color: rgb(62,195,246);
     
-    border-top: 5px solid $grey-color-dark;
-    border-bottom: 1px solid $grey-color-light;
-    min-height: 56px;
-
-    // Positioning context for the mobile navigation icon
-    position: relative;
-}
-
-.site-title {
-    font-size: 26px;
-    font-weight: 300;
-    line-height: 56px;
-    letter-spacing: -1px;
-    margin-bottom: 0;
-    float: left;
-
-    &,
     &:visited {
-        color: $grey-color-dark;
+        color: #fff;
     }
 }
 
-.site-nav {
-    float: right;
-    line-height: 56px;
-
-    .menu-icon {
-        display: none;
-    }
-
-    .page-link {
-        color: $text-color;
-        line-height: $base-line-height;
-
-        // Gaps between nav items, but not on the last one
-        &:not(:last-child) {
-            margin-right: 20px;
-        }
-    }
-
-    @include media-query($on-palm) {
-        position: absolute;
-        top: 9px;
-        right: $spacing-unit / 2;
-        background-color: $background-color;
-        border: 1px solid $grey-color-light;
-        border-radius: 5px;
-        text-align: right;
-
-        .menu-icon {
-            display: block;
-            float: right;
-            width: 36px;
-            height: 26px;
-            line-height: 0;
-            padding-top: 10px;
-            text-align: center;
-
-            > svg {
-                width: 18px;
-                height: 15px;
-
-                path {
-                    fill: $grey-color-dark;
-                }
-            }
-        }
-
-        .trigger {
-            clear: both;
-            display: none;
-        }
-
-        &:hover .trigger {
-            display: block;
-            padding-bottom: 5px;
-        }
-
-        .page-link {
-            display: block;
-            padding: 5px 10px;
-
-            &:not(:last-child) {
-                margin-right: 0;
-            }
-            margin-left: 20px;
-        }
-    }
+.navbar-inverse {
+  background: rgba(62,195,246,0);
+  border-bottom: none;
+  border-color: transparent !important;
+}
+.navbar-inverse .navbar-toggle {
+  border: 1px solid #333;
+  border-color: rgba(255,255,255,0.7);
 }
 
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+   border-color: transparent;
+   @media (max-width: 767px) {
+     background: rgba(255,255,255,0.75);
+   }
+}
+.navbar-inverse .navbar-nav > li > a {
+color: black;
+}
+.navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
+//color: #22F;
+color: #FFF;
+}
+ul.nav {
+}
 
+/* *********************************
+           Toolbar Logo
+  ********************************** */
+.small-logo-container {
+    padding-top: $navbar-height;
+    height: $navbar-height;
+    overflow: hidden;
+    position: absolute;
+  }
 
-/**
- * Site footer
+.small-logo {
+  color: white;
+  font-size: 2.5em;
+  padding-bottom: $small-logo-padding;
+}
+
+/* *********************************
+           Big Logo
+  ********************************** */
+.big-logo-row {
+  background: url("/images/titlebar.jpeg") no-repeat center;
+  color: #FFF;
+  
+  .big-logo-container {
+    padding-top: $navbar-height;
+  }
+  
+  h1 {
+    font-size: 4em;
+    margin:0;
+    padding:0 0 0 0;
+    
+    @media (min-width: 400px) { font-size: 4.5em; }
+    @media (min-width: 440px) { font-size: 5.5em; }
+    @media (min-width: 500px) { font-size: 6.5em; }
+    @media (min-width: 630px) { font-size: 7.5em;  }
+    @media (min-width: 768px) { font-size: 9em;  }
+    @media (min-width: 1200px) { font-size: 12em; }
+  }
+}
+
+/*
+ * Blog name and description
  */
-.site-footer {
-    border-top: 1px solid $grey-color-light;
-    padding: $spacing-unit 0;
+
+.blog-header {
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
-
-.footer-heading {
-    font-size: 18px;
-    margin-bottom: $spacing-unit / 2;
+.blog-title {
+  margin-top: 30px;
+  margin-bottom: 0;
+  font-size: 60px;
+  font-weight: normal;
 }
-
-.contact-list,
-.social-media-list {
-    list-style: none;
-    margin-left: 0;
-}
-
-.footer-col-wrapper {
-    font-size: 15px;
-    color: $grey-color;
-    margin-left: -$spacing-unit / 2;
-    @extend %clearfix;
-}
-
-.footer-col {
-    float: left;
-    margin-bottom: $spacing-unit / 2;
-    padding-left: $spacing-unit / 2;
-}
-
-.footer-col-1 {
-    width: -webkit-calc(35% - (#{$spacing-unit} / 2));
-    width:         calc(35% - (#{$spacing-unit} / 2));
-}
-
-.footer-col-2 {
-    width: -webkit-calc(20% - (#{$spacing-unit} / 2));
-    width:         calc(20% - (#{$spacing-unit} / 2));
-}
-
-.footer-col-3 {
-    width: -webkit-calc(45% - (#{$spacing-unit} / 2));
-    width:         calc(45% - (#{$spacing-unit} / 2));
-}
-
-@include media-query($on-laptop) {
-    .footer-col-1,
-    .footer-col-2 {
-        width: -webkit-calc(50% - (#{$spacing-unit} / 2));
-        width:         calc(50% - (#{$spacing-unit} / 2));
-    }
-
-    .footer-col-3 {
-        width: -webkit-calc(100% - (#{$spacing-unit} / 2));
-        width:         calc(100% - (#{$spacing-unit} / 2));
-    }
-}
-
-@include media-query($on-palm) {
-    .footer-col {
-        float: none;
-        width: -webkit-calc(100% - (#{$spacing-unit} / 2));
-        width:         calc(100% - (#{$spacing-unit} / 2));
-    }
+.blog-description {
+  font-size: 20px;
+  color: #FFF;
 }
 
 
-
-/**
- * Page content
+/*
+ * Main column and sidebar layout
  */
-.page-content {
-    padding: $spacing-unit 0;
+
+.blog-main {
+  font-size: 18px;
+  line-height: 1.5;
 }
 
-.page-heading {
-    font-size: 20px;
+/* Sidebar modules for boxing content */
+.sidebar-module {
+  padding: 15px;
+  margin: 0 -15px 15px;
+}
+.sidebar-module-inset {
+  padding: 15px;
+  background-color: #f5f5f5;
+  border-radius: 4px;
+}
+.sidebar-module-inset p:last-child,
+.sidebar-module-inset ul:last-child,
+.sidebar-module-inset ol:last-child {
+  margin-bottom: 0;
 }
 
-.post-list {
-    margin-left: 0;
-    list-style: none;
-
-    > li {
-        margin-bottom: $spacing-unit;
+/* Blog Home */
+.exerpt {
+    font-size: 25px;
+    font-weight: 300;
+    line-height: 32px;
+    
+    img{
+        padding: 7px 10px 0 0;
     }
 }
-
-.post-meta {
-    font-size: $small-font-size;
-    color: $grey-color;
+.read-more {
+        padding-top: 7px;
+}
+.tags{
+    padding-top: 15px;
+    font-weight: bold;
 }
 
-.post-link {
-    display: block;
-    font-size: 24px;
+/* Pagination */
+.pager {
+  margin-bottom: 60px;
+  text-align: left;
+}
+.pager > li > a {
+  width: 140px;
+  padding: 10px 20px;
+  text-align: center;
+  border-radius: 30px;
 }
 
 
-
-/**
- * Posts
+/*
+ * Blog posts
  */
-.post-header {
-    margin-bottom: $spacing-unit;
+
+.blog-post {
+  margin-bottom: 60px;
+}
+.blog-post-title {
+  margin-bottom: 5px;
+  font-size: 40px;
+}
+.blog-post-meta {
+  margin-bottom: 20px;
+  color: #999;
 }
 
-.post-title {
-    font-size: 42px;
-    letter-spacing: -1px;
-    line-height: 1;
 
-    @include media-query($on-laptop) {
-        font-size: 36px;
-    }
+/*
+ * Footer
+ */
+
+.blog-footer {
+  padding: 40px 0;
+  color: #999;
+  text-align: center;
+  background-color: #f9f9f9;
+  border-top: 1px solid #e5e5e5;
 }
-
-.post-content {
-    margin-bottom: $spacing-unit;
-
-    h2 {
-        font-size: 32px;
-
-        @include media-query($on-laptop) {
-            font-size: 28px;
-        }
-    }
-
-    h3 {
-        font-size: 26px;
-
-        @include media-query($on-laptop) {
-            font-size: 22px;
-        }
-    }
-
-    h4 {
-        font-size: 20px;
-
-        @include media-query($on-laptop) {
-            font-size: 18px;
-        }
-    }
+.blog-footer p:last-child {
+  margin-bottom: 0;
 }

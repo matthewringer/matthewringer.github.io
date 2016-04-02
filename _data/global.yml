@@ -1,0 +1,19 @@
+# Site settings
+title: Unfork
+sub-title: 'Because blogging was on my todo list'
+description: >
+  Misadventures in creative code writing.
+about: > 
+  This is some basic text for the about box in the corner...
+baseurl: ''
+footer: ''
+url: 'http://matthewringer.github.io/'
+email: mringer@gmail.com
+#twitter_username: '@supineunicorn'
+#twitter_link: 'https://twitter.com/@supineunicorn'
+github_username:  matthewringer
+github_link: 'https://github.com/matthewringer'
+stackoverflow_username: 'matt-ringer'
+stackoverflow_link: 'http://stackoverflow.com/users/623604/matt-ringer'
+codepen_username: supineUnicorn
+codepen_link: http://codepen.io/supineUnicorn/

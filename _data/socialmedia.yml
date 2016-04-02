@@ -1,0 +1,27 @@
+accounts:
+    - name: "github"
+      username: "matthewringer"
+      link: 'https://github.com/matthewringer'
+      icon: 'fa-github-square'
+    
+    - name: 'stackoverflow'
+      username: 'matt-ringer'
+      link: 'http://stackoverflow.com/users/623604/matt-ringer'
+      icon: 'fa-stack-overflow'
+    
+    - name: 'codepen'
+      username: 'supineUnicorn'
+      link: 'http://codepen.io/supineUnicorn/'
+      icon: 'fa-codepen'
+    
+    - name: 'linkedin'
+      username: 'Matt Ringer'
+      link: 'http://www.linkedin.com/in/matthewaringer'
+      icon: 'fa-linkedin'
+    
+    #- name: ''
+    #  username: ''
+    #  link: ''
+    #  icon: '' 
+    
+      
