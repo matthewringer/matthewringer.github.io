@@ -5,8 +5,8 @@ markdown: kramdown
 gems: ['jekyll-paginate']
 
 # Outputing
-permalink:     /:title.html
-paginate: 10
+permalink:     /blog/:title.html
+paginate: 2
 paginate_path: /page:num
 timezone:      null
 

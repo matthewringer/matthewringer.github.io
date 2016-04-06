@@ -83,10 +83,22 @@ ul.nav {
     position: absolute;
   }
 
-.small-logo {
+.small-logo > a {
   color: white;
   font-size: 2.5em;
   padding-bottom: $small-logo-padding;
+  &:hover {
+      color: white;
+  } 
+}
+
+.big-logo > a {
+  color: white;
+  
+  &:hover {
+      color: white;
+  } 
+  
 }
 
 /* *********************************
@@ -160,6 +172,12 @@ ul.nav {
 }
 
 /* Blog Home */
+.logo {
+    a:visited {
+        color: white;
+    }
+}
+
 .exerpt {
     font-size: 25px;
     font-weight: 300;

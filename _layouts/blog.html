@@ -6,13 +6,12 @@
   <body>
 
     {% include header.html %}
-    
     <div class="container">
         <div class="row">
             <div class="col-sm-12 blog-main">
                 <!-- This loops through the paginated posts -->
                 {% for post in paginator.posts %}
-                <div class="blog-post">
+                <div class="blog-post col-sm-12">
                     <h2 class="blog-post-title">{{ post.title }}</h2>
                     <p class="blog-post-meta"> {{ post.date | date_to_string }} by {{post.author}}</p>
                     <div class="col-sm-10 exerpt">    

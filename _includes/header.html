@@ -9,13 +9,13 @@
             <span class="icon-bar"></span>
           </button>
           <div class="small-logo-container">
-            <p class="small-logo">{% include logo.html %}</p>
+            <p class="small-logo"><a href="/">{% include logo.html %}</a></p>
           </div>
         </div>
         <div class="navbar-collapse collapse">
            <ul class="nav navbar-nav navbar-right">
             {% for my_page in site.pages %}
-                {% if my_page.id %}
+                {% if my_page.nav == "true" %}
                 <li id="{{my_page.id}}"><a href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a></li>
                 {% endif %}
             {% endfor %}
@@ -28,7 +28,7 @@
       <div class="container">
         <div class="row">
           <div class="col-xs-12 big-logo-container">
-            <h1 class="big-logo">{% include logo.html %}</h1>
+            <h1 class="big-logo"><a href="/">{% include logo.html %}</a></h1>
             <p class="lead blog-description">{{site.data.global.sub-title}}</p>
           </div><!--/.col-xs-12 -->
         </div><!--/.row -->
@@ -70,6 +70,5 @@ $(window).scroll(function() {
   } else {
     $('.navbar').css({"box-shadow": "none"});
   }
-  
-});
+});  
 </script>
