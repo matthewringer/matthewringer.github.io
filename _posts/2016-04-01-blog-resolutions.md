@@ -5,7 +5,7 @@ date:   2016-04-01
 categories: jekyll update
 author: "Matt R"
 featured_image: 'http://placekitten.com/400/400'
-tags: [JEKYLL, GITHUB PAGES, BLOG, HOWTO ]
+tags: JEKYLL GITHUB PAGES BLOG howto
 ---
 
 ### Resolution reality check.

@@ -178,10 +178,15 @@ ul.nav {
     }
 }
 
+.sm-thumbnail {
+    max-height: 200px;
+    max-width: 200px;
+}
+
 .exerpt {
-    font-size: 25px;
-    font-weight: 300;
-    line-height: 32px;
+    // font-size: 25px;
+    // font-weight: 300;
+    // line-height: 32px;
     
     img{
         padding: 7px 10px 0 0;
