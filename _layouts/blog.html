@@ -12,13 +12,13 @@
                 <!-- This loops through the paginated posts -->
                 {% for post in paginator.posts %}
                 <div class="blog-post col-sm-12">
-                    <a  href="{{ post.url }}#disqus_thread"><h2 class="blog-post-title">{{ post.title }}</h2></a>
+                    <a  href="{{ post.url }}"><h2 class="blog-post-title">{{ post.title }}</h2></a>
                     <p class="blog-post-meta"> {{ post.date | date_to_string }} by {{post.author}}</p>
                     <div class="col-sm-10 exerpt">    
                         {% if post.featured_image %}
                         <a  href="{{ post.url }}"><img class="col-sm-3" src="{{post.featured_image }}"/></a>
                         {%endif%}
-                        <p>{{ post.content | strip_html | truncatewords:100}} <a  href="{{ post.url }}">Read More</a></p>
+                        <p>{{ post.content | strip_html | truncatewords:100}} <a  href="{{ post.url }}#disqus_thread">Read More</a></p>
                     </div>
                     <div class="col-sm-8 tags">
                         {% for tag in post.tags %}
