@@ -5,7 +5,7 @@ description: >
   Misadventures in creative code writing.
 about: > 
   This is some basic text for the about box in the corner...
-baseurl: ''
+baseurl: 'http://unfork.me'
 footer: ''
 url: 'http://matthewringer.github.io/'
 email: mringer@gmail.com

@@ -12,7 +12,7 @@
                 <!-- This loops through the paginated posts -->
                 {% for post in paginator.posts %}
                 <div class="blog-post col-sm-12">
-                    <a  href="{{ post.url }}"><h2 class="blog-post-title">{{ post.title }}</h2></a>
+                    <a  href="{{ post.url }}#disqus_thread"><h2 class="blog-post-title">{{ post.title }}</h2></a>
                     <p class="blog-post-meta"> {{ post.date | date_to_string }} by {{post.author}}</p>
                     <div class="col-sm-10 exerpt">    
                         {% if post.featured_image %}
