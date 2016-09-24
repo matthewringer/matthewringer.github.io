@@ -33,7 +33,7 @@ There are two basic types of pages, profile/orginization, and project pages. The
 #### Step 1: Create a repo
 Open your github profile. And add a new Repository. It must be named username.github.io where username is your username.
 
-<img class="img-thumbnail" src="/images/add-repo.png">
+<img class="img-thumbnail" src="/images/add-repo.png" alt="Add Repository" >
 
 #### Step 2: Clone your new repo locally
 {% highlight bash %}
@@ -109,7 +109,7 @@ Now we can Instal Ruby.
 That's it you've just built your first Jekyll site!
 
 
-<img class="img-thumbnail" src="/images/yourawesomesite.png">
+<img class="img-thumbnail" src="/images/yourawesomesite.png" alt="You are awesome">
 
 
 Jekyll ships with it's own tiny webserver so you can get right to hacking on your new site. It also is configured to watch your file system and recompile when changes are detected. How cool is that?

@@ -45,7 +45,7 @@ The first task at hand was to arrange everything involved in the animation. This
 inverse-coordinates determined where each circle would be at the 50% keyframe. A little math and a little pixel bumping and the transit of the first and fifth circles were looking pretty good. But as the other circles were added, it became clear that there was a bit of a problem, the circles were colliding in the center. Clearly this little hack wouldn't be as simple as lining everything up and hitting go.
 
 
-<img class="img-thumbnail sm-thumbnail" src="/images/noon-six.gif"> <img class="img-thumbnail sm-thumbnail" src="/images/three-nine.gif"><img class="img-thumbnail sm-thumbnail" src="/images/collisions.gif">
+<img class="img-thumbnail sm-thumbnail" src="/images/noon-six.gif" alt="Noon and Six"> <img class="img-thumbnail sm-thumbnail" src="/images/three-nine.gif" alt="Three and nine" ><img class="img-thumbnail sm-thumbnail" src="/images/collisions.gif" alt="Collisions" >
 
 ### Timing is the key to success
 So starting everything at the same time wasn't going to cut it, that's where the animation-delay property comes in. Animation delay does what it sounds like, it allows you to delay the start of animation until some number of seconds after the element loads. 
@@ -54,7 +54,7 @@ Additionally, if you specify a negative value the animation appears as if it wer
 
 So things were starting to come together, but the animation still left me flat, specifically the shape of my ring of circles wasn't very circular, more of a flat tire with a magnet inside. So close... 
 
-<img class="img-thumbnail sm-thumbnail" src="/images/flattire.gif">
+<img class="img-thumbnail sm-thumbnail" src="/images/flattire.gif" alt="Flat Tire" >
 
 ### The best solution isn't always a straight line
 When I looked at any given circle's movement it appeared to bounce off the 50% keyframe like a tennis ball. 
@@ -71,7 +71,7 @@ Cycling through each yielded some interesting effects (you can try them for your
 
 ### Mission Accomplished: 
 
-<a href="http://codepen.io/supineUnicorn/pen/MypXLy"><img class="img-thumbnail sm-thumbnail" src="/images/success.gif"></a>
+<a href="http://codepen.io/supineUnicorn/pen/MypXLy"><img class="img-thumbnail sm-thumbnail" src="/images/success.gif" alt="Success, link to my codepen" ></a>
 
 ### Bonus!
 While fussing over getting all the circles to start in a good place in my [codepen][codepen] example I stumbled on a neat bonus, by simply inverting the animation delay for each item, I could toggle the direction that the circles appear tobe rotating. Thanks math! 

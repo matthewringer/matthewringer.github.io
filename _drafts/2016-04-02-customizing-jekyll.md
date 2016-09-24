@@ -10,7 +10,7 @@ tags: [JEKYLL, GITHUB PAGES, BLOG, HOWTO ]
 
 ### First things first, setup your Github Page repo
 
-<img class="img-thumbnail" src="/images/add-repo.png">
+<img class="img-thumbnail" src="/images/add-repo.png" alt="Add repo" >
 
 Jekyll ships with it's own tiny webserver so you can get right to hacking on your new site. It also is configured to watch your file system and recompile when changes are detected. How cool is that?
 
