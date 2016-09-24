@@ -12,3 +12,5 @@ timezone:      null
 
 include: ['_pages']
 
+exclude: [vendor]
+
