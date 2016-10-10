@@ -5,6 +5,7 @@ date:   2016-04-04
 categories: dev 
 author: "Matt R"
 featured_image: /images/success.gif
+featured_image_alt: "White circles rotating on a red background"
 tags: CODEPEN HTML5 CSS3 ANIMATION
 ---
 

@@ -5,6 +5,7 @@ date:   2016-04-01
 categories: jekyll update
 author: "Matt R"
 featured_image: 'http://placekitten.com/400/400'
+featured_image_alt: "An adorable kitten"
 tags: JEKYLL GITHUB PAGES BLOG howto
 ---
 
