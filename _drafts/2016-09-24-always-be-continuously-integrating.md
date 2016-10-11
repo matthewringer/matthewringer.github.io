@@ -9,6 +9,7 @@ featured_image_alt: "Glenn Garry, Glenn Ross ABC Gif"
 tags: JEKYLL GITHUB PAGES BLOG TRAVISCI CI INTEGRATION TESTING
 ---
 
+
 <img class="img-thumbnail sm-thumbnail" src="/images/AlwaysBeClosing.gif" alt="Always Be Closing"> 
 
 I've been an advocate of *Continuous integration* and *TDD* practices for more than a few years now. In the past it was often difficult to convince bosses and peers that it was worth the effort to configure and deploy. In every case the time spent was repaid exponentially in faster and smoother deployments, and fewer defects. 
